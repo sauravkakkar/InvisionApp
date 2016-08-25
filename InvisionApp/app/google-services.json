@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "874834519716",
+    "project_id": "invision-45752"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:874834519716:android:94e6c591459fd4f9",
+        "android_client_info": {
+          "package_name": "com.devfusion.saurav.invision"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "874834519716-vqdo7j5uk4sprfsh235is5f8rcah2987.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.devfusion.saurav.invision",
+            "certificate_hash": "1216531A5DCB8B0ECFA657801A83F44DE137A1EC"
+          }
+        },
+        {
+          "client_id": "874834519716-8r1v0v49f86125gmfcgbr5bh87eela2h.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBXnT4FrdqOPaUZ1oF0fudAeORA4dgwS6A"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 1
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

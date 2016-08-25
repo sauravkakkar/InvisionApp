@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:fillViewport="true">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#FFFFFF">
+
+
+    <RelativeLayout
+        android:id="@+id/rl_actionbar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+        android:background="#FAFAFA" >
+
+
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="30dp"
+            android:layout_height="25dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/back_black"
+            />
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="Skills"
+            android:textSize="25sp"
+            />
+
+    </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_images"
+            android:layout_below="@+id/rl_actionbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FFFFFF">
+
+            <ImageView
+                android:id="@+id/imv_profile"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:src="@drawable/film_width"
+                android:scaleType="fitXY"/>
+
+            <ImageView
+                android:id="@+id/imv_temp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/fill1"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="25dp"/>
+
+            <TextView
+                android:id="@+id/tv_temp"
+                android:layout_below="@+id/imv_temp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:text="Film"
+                android:textColor="#fff"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_option"
+            android:layout_below="@+id/rl_images"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tv_director"
+                android:layout_below="@+id/tv_film"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="Director"
+                android:gravity="center"
+                android:textSize="20dp"
+                android:layout_marginLeft="20dp"/>
+
+            <TextView
+                android:id="@+id/tv_casting_director"
+                android:layout_below="@+id/tv_director"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="Casting Director"
+                android:gravity="center"
+                android:textSize="20dp"
+                android:layout_marginLeft="20dp"/>
+
+            <TextView
+                android:id="@+id/tv_dop"
+                android:layout_below="@+id/tv_casting_director"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="Cinematographer/DOP"
+                android:gravity="center"
+                android:textSize="20dp"
+                android:layout_marginLeft="20dp"/>
+            <TextView
+                android:id="@+id/tv_writer"
+                android:layout_below="@+id/tv_dop"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="Writer - Film and TV"
+                android:gravity="center"
+                android:textSize="20dp"
+                android:layout_marginLeft="20dp"/>
+
+            <TextView
+                android:id="@+id/tv_editor"
+                android:layout_below="@+id/tv_writer"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="Editor"
+                android:gravity="center"
+                android:textSize="20dp"
+                android:layout_marginLeft="20dp"/>
+
+            <TextView
+                android:id="@+id/tv_producer"
+                android:layout_below="@+id/tv_editor"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="Producer"
+                android:textStyle="bold"
+                android:textColor="#000"
+                android:gravity="center"
+                android:textSize="20dp"
+                android:layout_marginLeft="20dp"/>
+            <TextView
+                android:id="@+id/tv_gaffer"
+                android:layout_below="@+id/tv_producer"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="Gaffer"
+                android:gravity="center"
+                android:textSize="20dp"
+                android:layout_marginLeft="20dp"/>
+
+            <TextView
+                android:id="@+id/tv_lighting"
+                android:layout_below="@+id/tv_gaffer"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="Lighting technician"
+                android:gravity="center"
+                android:textSize="20dp"
+                android:layout_marginLeft="20dp"/>
+            <TextView
+                android:id="@+id/tv_camera_operator"
+                android:layout_below="@+id/tv_lighting"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="Camera Operator"
+                android:gravity="center"
+                android:textSize="20dp"
+                android:layout_marginLeft="20dp"/>
+            <TextView
+                android:id="@+id/tv_animation"
+                android:layout_below="@+id/tv_camera_operator"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="Animation"
+                android:gravity="center"
+                android:textSize="20dp"
+                android:layout_marginLeft="20dp"/>
+            <TextView
+                android:id="@+id/tv_visual_effect"
+                android:layout_below="@+id/tv_animation"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="Visual effects"
+                android:gravity="center"
+                android:textSize="20dp"
+                android:layout_marginLeft="20dp"/>
+            <TextView
+                android:id="@+id/tv_designer"
+                android:layout_below="@+id/tv_visual_effect"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="Set Designer"
+                android:gravity="center"
+                android:textSize="20dp"
+                android:layout_marginLeft="20dp"/>
+            <TextView
+                android:id="@+id/tv_sound"
+                android:layout_below="@+id/tv_designer"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="Sound Designer"
+                android:gravity="center"
+                android:textSize="20dp"
+                android:layout_marginLeft="20dp"/>
+            <TextView
+                android:id="@+id/tv_production_sound"
+                android:layout_below="@+id/tv_sound"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="Production Sound"
+                android:gravity="center"
+                android:textSize="20dp"
+                android:layout_marginLeft="20dp"/>
+
+
+        </RelativeLayout>
+
+</RelativeLayout>
+</ScrollView>

@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF">
+
+    <RelativeLayout
+        android:id="@+id/rl_actionbar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+        android:background="#FAFAFA" >
+
+
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="30dp"
+            android:layout_height="25dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/back_black"/>
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="LOGO"
+            android:textSize="25sp"
+            android:textColor="#000"/>
+
+        <ImageView
+            android:id="@+id/search"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="10dp"
+            android:src="@android:drawable/ic_menu_search"/>
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_imv"
+        android:layout_below="@+id/rl_actionbar"
+        android:layout_width="280dp"
+        android:layout_height="230dp"
+        android:layout_centerHorizontal="true">
+
+        <ImageView
+            android:id="@+id/imv_prof"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/profile"
+            android:layout_centerInParent="true"
+            android:scaleType="fitXY"/>
+
+        <Button
+            android:id="@+id/btn_edit"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:text="Edit"
+            android:textAllCaps="false"
+            android:layout_marginBottom="2dp"
+            android:layout_marginRight="1dp"
+            android:textColor="@android:color/holo_red_dark"
+            android:background="@drawable/rectangle"
+            android:layout_alignBottom="@+id/imv_prof"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"/>
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_below="@+id/rl_imv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:text="Alisa Mistaw"
+        android:textSize="25dp"
+        android:textColor="#000"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:id="@+id/tv_address"
+        android:layout_below="@+id/tv_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="15dp"
+        android:text="22, Toronto"
+        android:textSize="15dp"
+        android:textColor="#000"
+        android:layout_centerHorizontal="true"/>
+
+    <RelativeLayout
+        android:id="@+id/rl_setting"
+        android:layout_below="@+id/tv_address"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp">
+
+        <TextView
+            android:id="@+id/tv_profile"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:text="Profile"
+            android:textSize="25dp"
+            android:textColor="#000"
+            android:layout_centerHorizontal="true"/>
+        <TextView
+            android:id="@+id/tv_setting"
+            android:layout_below="@+id/tv_profile"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:text="Settings"
+            android:textSize="25dp"
+            android:textColor="#000"
+            android:layout_centerHorizontal="true"/>
+        <TextView
+            android:id="@+id/tv_request"
+            android:layout_below="@+id/tv_setting"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:text="Requests"
+            android:textSize="25dp"
+            android:textColor="#000"
+            android:layout_centerHorizontal="true"/>
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

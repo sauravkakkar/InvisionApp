@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+   <VideoView
+        android:id="@+id/myvideo"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+
+        <ImageView
+            android:id="@+id/imv_temp_film"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/fill1"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="40dp"/>
+
+        <TextView
+            android:id="@+id/tv_temp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="Invision"
+            android:fontFamily="sans-serif-light"
+            android:textSize="30dp"
+            android:textColor="#fff"
+            android:layout_below="@+id/imv_temp_film"
+            android:layout_marginTop="5dp"/>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+
+
+        <com.android.volley.toolbox.NetworkImageView
+            android:id="@+id/profileImage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:text="Name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/textViewName"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+        <TextView
+            android:text="email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+        <TextView
+            android:id="@+id/textViewEmail"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/bt_logout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Logout"
+            android:visibility="gone"/>
+
+        <Button
+            android:id="@+id/bt_disconnect"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Disconnect"
+            android:textAllCaps="false"
+            />
+
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/rl_login"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/input_email"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:inputType="textEmailAddress"
+                android:hint="  Enter Email"
+                android:fontFamily="sans-serif-light"
+                android:textColor="#FFFFFF"
+                android:textColorHint="#FFFFFF"
+                android:drawableLeft="@android:drawable/ic_menu_myplaces"
+                android:background="@android:color/transparent"
+                android:paddingLeft="20dp"
+                />
+
+        <View
+            android:id="@+id/view_1"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_below="@+id/input_email"
+            android:layout_width="match_parent"
+            android:layout_height="0.1dp"
+            android:background="#cfcfcf"/>
+
+
+            <EditText
+                android:id="@+id/input_password"
+                android:layout_below="@+id/view_1"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:fontFamily="sans-serif-light"
+                android:inputType="textPassword"
+                android:hint=" Enter Password"
+                android:textColor="#FFFFFF"
+                android:textColorHint="#FFFFFF"
+                android:layout_marginTop="10dp"
+                android:background="@android:color/transparent"
+                android:drawableLeft="@android:drawable/ic_menu_myplaces"
+                android:paddingLeft="20dp"/>
+
+        <View
+            android:id="@+id/view_2"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_below="@+id/input_password"
+            android:layout_width="match_parent"
+            android:layout_height="0.1dp"
+            android:background="#cfcfcf"/>
+
+
+        <TextView
+            android:id="@+id/tv_forgot_pwd"
+            android:text="Forgot Password?"
+            android:layout_below="@+id/view_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="5dp"
+            android:textColor="#cfcfcf"
+            android:fontFamily="sans-serif-thin"
+            android:layout_marginRight="10dp"/>
+
+
+
+        <com.google.android.gms.common.SignInButton
+            android:id="@+id/sign_in_button"
+            android:layout_width="180dp"
+            android:layout_height="53dp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/tv_forgot_pwd"
+            android:layout_marginTop="5dp"
+            />
+
+        <com.facebook.login.widget.LoginButton
+            android:id="@+id/login_button_facebook"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_below="@+id/sign_in_button"
+            android:layout_centerHorizontal="true"
+            android:paddingTop="15dp"
+            android:paddingBottom="15dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="15dp" />
+
+
+        <Button
+            android:id="@+id/btn_signup"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_below="@+id/login_button_facebook"
+            android:text="Sign In"
+            android:fontFamily="sans-serif-light"
+            android:textAllCaps="false"
+            android:layout_marginTop="5dp"
+            android:layout_centerHorizontal="true"
+            android:background="@color/colorPrimary"
+            android:textColor="#FFF"
+            android:textSize="20dp"/>
+
+
+        <TextView
+            android:id="@+id/tv_signup"
+            android:text="Don't have an account? Sign up"
+            android:layout_below="@+id/btn_signup"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="5dp"
+            android:gravity="center"
+            android:fontFamily="sans-serif-thin"
+            android:layout_centerHorizontal="true"/>
+
+
+    </RelativeLayout>
+
+
+
+
+</RelativeLayout>
